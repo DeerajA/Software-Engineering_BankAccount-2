@@ -3,3 +3,7 @@ from BankAccountFile.BankAccountPart2 import BankAccount
 class SavingAccount(BankAccount):
     def __init__(self, customer_name, current_balance, minimum_balance, interest_rate):
         super().__init__(customer_name, current_balance, minimum_balance)
+        self.interest_rate = interest_rate
+
+    def add_interest(self):
+        self.current_balance += self.current_balance * (self.interest_rate / 100)
