@@ -7,8 +7,8 @@ class BankAccount:
         self.customer_name = customer_name
         self.current_balance = current_balance
         self.minimum_balance = minimum_balance
-        self.account_number = account_number
-        self.routing_number = routing_number
+        self._account_number = account_number
+        self.__routing_number = routing_number
 
     # The deposit method that allows users to add to the current balance
     def deposit(self, amount):
