@@ -1,4 +1,4 @@
-from BankAccountFile.BankAccountPart2 import BankAccount
+from BankAccountPart2 import BankAccount
 
 
 class CheckingAccount(BankAccount):
