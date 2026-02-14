@@ -34,9 +34,11 @@ def main():
 
     savingAccount_1.print_customer_information()
     savingAccount_1.add_interest()
+    savingAccount_1.print_customer_information()
 
     savingAccount_2.print_customer_information()
     savingAccount_2.add_interest()
+    savingAccount_2.print_customer_information()
 
 
 if __name__ == "__main__":
