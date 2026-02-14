@@ -1,6 +1,6 @@
 class BankAccount:
     # This is the class attributes
-    BankTitle = " Bank Title"
+    BankTitle = "Bank of Software Engineering"
 
     # This is the Instance Attributes
     def __init__(self, customer_name, current_balance, minimum_balance, account_number, routing_number):
@@ -25,4 +25,4 @@ class BankAccount:
     def print_customer_information(self):
         print("Customer Name: " + self.customer_name)
         print("Current Balance: " + str(self.current_balance))
-        print(" Bank Title" + self.BankTitle)
+        print("Bank Title: " + self.BankTitle)
