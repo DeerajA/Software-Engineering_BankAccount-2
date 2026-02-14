@@ -21,12 +21,25 @@ def main():
     checkAccount_1.print_customer_information()
 
 
-    print("Scenario testing Sam's checking account")
+    print("\nScenario testing Sam's checking account")
     checkAccount_2.print_customer_information()
 
     checkAccount_2.transfer(500)                    #testing transfer
     checkAccount_2.transfer(650)                    #testing transfer_limit, should fail
     checkAccount_2.withdraw(6300)                   #should fail as not enough for minimum_balance
+
+
+    print("\n Saving account Interest testing")
+
+    savingAccount_1.print_customer_information()
+    savingAccount_1.add_interest()
+
+    savingAccount_2.print_customer_information()
+    savingAccount_2.add_interest()
+
+
+if __name__ == "__main__":
+    main()
 
 
 
