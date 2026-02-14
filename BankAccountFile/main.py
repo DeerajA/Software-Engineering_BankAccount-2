@@ -11,9 +11,7 @@ def main():
     savingAccount_2 = SavingAccount("Sam", 8700, 200, 112326825, 44019247, 0.06) # self, customer_name, current_balance, minimum_balance, account_number, routing_number, interest_rate
 
 
-    #Scenario John opens a checking account and withdraws 200
-
-    print("Welcome John")
+    print("Scenario John opens a checking account and withdraws 200")
     checkAccount_1.print_customer_information()
 
     checkAccount_1.withdraw(200)                    #withdraw $x
@@ -21,6 +19,15 @@ def main():
     checkAccount_1.transfer(550)                    #testing transfer_limit, should fail
 
     checkAccount_1.print_customer_information()
+
+
+    print("Scenario testing Sam's checking account")
+    checkAccount_2.print_customer_information()
+
+    checkAccount_2.transfer(500)                    #testing transfer
+    checkAccount_2.transfer(650)                    #testing transfer_limit, should fail
+    checkAccount_2.withdraw(6300)                   #should fail as not enough for minimum_balance
+
 
 
 
